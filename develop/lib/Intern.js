@@ -1,4 +1,4 @@
-// Importing Employee clas
+// Importing Employee class
 const Employee = require("./Employee")
 // Extending Employee class to Intern class
 
