@@ -1,10 +1,10 @@
 class Employee {
     //Constructor Properties
-    constructor(name, id, email, title = "Employee"){
+    constructor(name, id, email, role = "Employee"){
         this.name = name
         this.id = id
         this.email = email
-        this.title = title
+        this.role = role
     }
     //Methods
 
@@ -17,8 +17,8 @@ class Employee {
     getEmail() {
         return this.email
     }
-    getTitle() {
-        return this.title
+    getRole() {
+        return this.role
     }
     getRole() {
         return "Employee"

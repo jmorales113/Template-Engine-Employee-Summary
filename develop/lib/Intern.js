@@ -3,8 +3,8 @@ const Employee = require("./Employee")
 // Extending Employee class to Intern class
 
 class Intern extends Employee {
-    constructor(name, id, email, title = "Intern", school = "UCLA") {
-        super(name, id, email, title)
+    constructor(name, id, email, school) {
+        super(name, id, email)
         this.school = school
     }
     getSchool() {
