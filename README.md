@@ -6,6 +6,7 @@ Task: To build a software engineering team generator command line application. T
 
 Deployed application:  https://jmorales113.github.io/Homework-10-Template-Engine---Employee-Summary/
 
-![image](https://user-images.githubusercontent.com/57970306/76660327-e2257880-6535-11ea-9430-b99d965d3ff6.png)
+![image](https://user-images.githubusercontent.com/57970306/76660477-43e5e280-6536-11ea-8df0-308bc60ce28b.png)
+
 
 
