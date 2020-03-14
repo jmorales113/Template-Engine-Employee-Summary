@@ -9,7 +9,7 @@ const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./lib/htmlRenderer");
 
-const team = []
+ const team = []
 function manager() {
     inquirer.prompt([
     {
@@ -117,6 +117,7 @@ function addEmployees() {
             ]
         }
     ]).then(response => {
+        
         console.log(response.employee)
         switch(response.employee) {
             case "Manager":
@@ -129,8 +130,14 @@ function addEmployees() {
                 intern();
                 break;
             default:
-                console.log(team)
+                fs.writeFile(outputPath, render(team), function(err){
+                    if (err) {
+                        throw err
+                    }
+                })
         }
     })
+    
 }
 addEmployees()
+
